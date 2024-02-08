@@ -1,8 +1,17 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation
 import { navLinks } from "../constants";
+import { useEffect } from "react";
 
 const Navbar = () => {
+  const location = useLocation(); // Get the current location
   const [active, setActive] = useState("Home");
+
+  // Update active state based on the current pathname
+  useEffect(() => {
+    const pathname = location.pathname.split("/")[1]; // Get the first part of the path
+    setActive(pathname.charAt(0).toUpperCase() + pathname.slice(1)); // Capitalize the first letter
+  }, [location]);
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
@@ -16,7 +25,7 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <Link to={`/${nav.id}`}>{nav.title}</Link> {/* Use Link component */}
           </li>
         ))}
       </ul>
