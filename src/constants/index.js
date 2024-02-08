@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, icon, twitter, airbnb, binance, coinbase, dropbox,  } from "../assets";
 
 export const navLinks = [
   {
@@ -18,19 +18,19 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
+    icon: icon,
     content:
       "Empowering doctors with cutting-edge AI technology to make diagnoses even more accurate.",
   },
   {
     id: "feature-2",
-    icon: shield,
+    icon: icon,
     content:
       "Harnessing the power of data to personalize patient care and improve outcomes.",
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: icon,
     content:
       "We don't just treat symptoms, we predict and prevent them with groundbreaking technology.",
   },

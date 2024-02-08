@@ -22,7 +22,10 @@ import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
+import finddoc from  "./finddoc.svg";
+import icon from "./icon.png";
 import people03 from "./people03.png";
+import doctor from "./doctor.svg";
 
 export {
   airbnb,
@@ -50,4 +53,7 @@ export {
   people01,
   people02,
   people03,
+  finddoc,
+  icon,
+  doctor,
 };

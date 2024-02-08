@@ -1,6 +1,6 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Navbar, Hero } from "./components";
-// Footer
+import { Billing, Business, Navbar, Hero } from "./components";
+// Footer CardDeal
 const Home = () => (
   <div className="bg-primary w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -18,7 +18,7 @@ const Home = () => (
       <div className={`${styles.boxWidth}`}>
         <Business />
         <Billing />
-        <CardDeal />
+        {/* <CardDeal /> */}
         {/* <Footer /> */}
       </div>
     </div>
