@@ -89,7 +89,7 @@ const Chat = () => {
       <div className="flex-1 overflow-y-auto p-4" ref={messagesEndRef}>
         {messages.map((message, index) => (
           <div key={index} className={`p-2 flex ${message.type === 'query' ? 'justify-end' : 'justify-start'}`}>
-            <div className={`bg-white p-2 rounded-lg ${message.type === 'query' ? 'text-right' : 'text-left'} w-[80%]`}>
+            <div className={`bg-white p-2 rounded-lg ${message.type === 'query' ? 'text-right' : 'text-left'} max-w-[80%]`}>
               <p className="text-gray-800">{message.content}</p>
             </div>
           </div>

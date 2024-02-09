@@ -548,13 +548,10 @@ const questionAnswerMap =
 
     "What are the treatment options for Rheumatoid Arthritis?":
     "Treatment for rheumatoid arthritis aims to reduce inflammation, relieve symptoms, prevent joint damage, and improve quality of life. Treatment may include medications (such as nonsteroidal anti-inflammatory drugs, disease-modifying antirheumatic drugs, and biologic agents), physical therapy, and lifestyle changes.",
-
     "What are Congenital Anomalies?":
     "Congenital anomalies, also known as birth defects, are structural or functional abnormalities present at birth. They can occur due to genetic factors, environmental exposures during pregnancy, or a combination of both.",
-
     "What are the causes of Congenital Anomalies?":
     "Congenital anomalies can be caused by genetic mutations, chromosomal abnormalities, maternal infections during pregnancy, exposure to toxins or medications, maternal health conditions (such as diabetes or obesity), and advanced maternal age.",
-
     "What are examples of Congenital Anomalies?":
     "Examples of congenital anomalies include structural defects (such as cleft lip and palate, heart defects, and neural tube defects), genetic disorders (such as Down syndrome and cystic fibrosis), and functional abnormalities affecting organs or systems.",
     "How are Congenital Anomalies diagnosed?":
