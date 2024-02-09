@@ -106,7 +106,82 @@ const questionAnswerMap =
     "What are the risk factors for developing rheumatoid arthritis?":
       "Risk factors for rheumatoid arthritis include genetic predisposition, family history of the disease, environmental factors (such as smoking or exposure to certain viruses or bacteria), hormonal changes, obesity, and systemic inflammation, triggering autoimmune reactions and joint inflammation.",
     "How does the body regulate blood clotting?":
-      "Blood clotting (or coagulation) is regulated by a complex cascade of biochemical reactions involving platelets, clotting factors, and blood vessel walls, forming fibrin clots to stop bleeding, maintain hemostasis, and repair damaged blood vessels while preventing excessive clot formation (thrombosis) or bleeding disorders."
-
+      "Blood clotting (or coagulation) is regulated by a complex cascade of biochemical reactions involving platelets, clotting factors, and blood vessel walls, forming fibrin clots to stop bleeding, maintain hemostasis, and repair damaged blood vessels while preventing excessive clot formation (thrombosis) or bleeding disorders.",
+    "What are the symptoms and risk factors associated with cardiovascular disease?":
+      "Symptoms of cardiovascular disease may include chest pain, shortness of breath, palpitations, fatigue, and dizziness. Risk factors include high blood pressure, high cholesterol, smoking, diabetes, obesity, sedentary lifestyle, and family history of heart disease.",
+    "How does the immune system respond to infections?":
+      "The immune system responds to infections by recognizing pathogens, producing antibodies, activating immune cells (such as T cells and B cells), and mounting an inflammatory response to neutralize and eliminate the invading microorganisms.",
+    "What are the benefits of vaccination?":
+      "Vaccination helps prevent infectious diseases by stimulating the immune system to produce antibodies against specific pathogens, reducing the risk of illness, complications, and transmission of infectious agents within communities.",
+    "How does exercise benefit mental health?":
+      "Exercise promotes mental health by releasing endorphins and neurotransmitters (such as dopamine and serotonin), reducing stress hormones, improving mood, cognitive function, and sleep quality, and enhancing self-esteem and overall well-being.",
+    "What role do vitamins and minerals play in maintaining health?":
+      "Vitamins and minerals are essential nutrients that support various physiological functions, including metabolism, immune function, bone health, tissue repair, antioxidant defense, and neurotransmitter synthesis.",
+    "What are the common signs and symptoms of depression?":
+      "Common signs and symptoms of depression include persistent sadness, loss of interest or pleasure in activities, changes in appetite or weight, sleep disturbances, fatigue, feelings of worthlessness or guilt, difficulty concentrating, and thoughts of death or suicide.",
+    "How does stress impact the gastrointestinal system?":
+      "Stress can disrupt gastrointestinal function by altering gut motility, increasing gut permeability, exacerbating symptoms of irritable bowel syndrome (IBS) or inflammatory bowel disease (IBD), and contributing to gastrointestinal disorders such as ulcers or acid reflux.",
+    "What are the benefits of maintaining a healthy diet?":
+      "Maintaining a healthy diet provides essential nutrients, supports energy metabolism, regulates blood sugar levels, promotes cardiovascular health, reduces the risk of chronic diseases (such as diabetes, obesity, and hypertension), and supports overall well-being and longevity.",
+    "How does the body regulate blood pressure?":
+      "Blood pressure is regulated by the cardiovascular and nervous systems, adjusting the contraction and relaxation of blood vessels, cardiac output, and fluid balance to maintain optimal blood flow and perfusion to organs and tissues.",
+    "What are the risk factors for developing osteoarthritis?":
+      "Risk factors for osteoarthritis include aging, obesity, joint injury or trauma, repetitive stress on joints, genetics, and underlying conditions such as rheumatoid arthritis or joint deformities.",
+    "How does the body respond to acute pain?":
+      "The body responds to acute pain by releasing neurotransmitters and activating pain receptors (nociceptors), triggering an immediate protective response, such as withdrawal reflexes, increased heart rate, and stress hormone release, to signal tissue damage or injury.",
+    "What are the benefits of adequate hydration?":
+      "Adequate hydration supports cellular function, regulates body temperature, facilitates nutrient absorption and waste removal, lubricates joints, supports cardiovascular function, enhances cognitive performance, and promotes overall health and well-being.",
+    "How does smoking tobacco affect respiratory health?":
+      "Smoking tobacco damages the respiratory system by causing inflammation, narrowing airways, reducing lung function, impairing ciliary function (which clears mucus and debris), increasing mucus production, and contributing to respiratory infections, chronic bronchitis, emphysema, and lung cancer.",
+    "What is the importance of regular health screenings?":
+      "Regular health screenings help detect early signs of diseases or conditions, facilitate early intervention and treatment, monitor health status and risk factors, prevent complications, and promote overall health maintenance and disease prevention.",
+    "How does the body regulate fluid and electrolyte balance?":
+      "Fluid and electrolyte balance is regulated by the kidneys, hormones (such as aldosterone and antidiuretic hormone), and electrolyte transport mechanisms, maintaining proper hydration, osmolarity, and pH balance within the body's cells and extracellular fluid compartments.",
+    "What are the benefits of practicing good sleep hygiene?":
+      "Practicing good sleep hygiene promotes restful sleep by establishing a regular sleep schedule, creating a conducive sleep environment, avoiding stimulants before bedtime, engaging in relaxation techniques, and prioritizing sleep as an essential component of overall health and well-being.",
+    "How does the body respond to dehydration?":
+      "Dehydration triggers physiological responses such as increased thirst, reduced urine output, dry mouth, fatigue, dizziness, headaches, dark urine, and electrolyte imbalances, compromising cellular function, kidney function, and overall health.",
+    "What are the benefits of regular physical activity for children and adolescents?":
+      "Regular physical activity promotes healthy growth and development, strengthens muscles and bones, improves cardiovascular fitness, enhances motor skills and coordination, reduces the risk of obesity, diabetes, and hypertension, and supports overall physical and mental well-being.",
+    "How does chronic inflammation contribute to the development of chronic diseases?":
+      "Chronic inflammation contributes to the development of chronic diseases by damaging tissues, promoting oxidative stress, impairing immune function, disrupting cellular signaling pathways, and contributing to the pathogenesis of conditions such as cardiovascular disease, diabetes, cancer, and autoimmune disorders.",
+    "What are the benefits of stress management techniques?":
+      "Stress management techniques help reduce the physiological and psychological effects of stress by promoting relaxation, reducing muscle tension, improving coping skills, enhancing resilience, and preventing stress-related health problems such as anxiety, depression, and cardiovascular disease.",
+    "What are the risk factors for developing type 2 diabetes?":
+      "Risk factors for type 2 diabetes include obesity, sedentary lifestyle, family history of diabetes, age, high blood pressure, high cholesterol levels, and certain ethnic backgrounds.",
+    "How does the body regulate blood glucose levels?":
+      "Blood glucose levels are regulated by insulin and glucagon, hormones produced by the pancreas. Insulin lowers blood sugar levels by facilitating glucose uptake by cells, while glucagon raises blood sugar levels by promoting glucose release from the liver.",
+    "What are the potential complications of untreated hypertension?":
+      "Untreated hypertension can lead to complications such as heart disease, stroke, kidney damage, vision loss, peripheral artery disease, and cognitive decline.",
+    "How does the body respond to acute inflammation?":
+      "The body responds to acute inflammation by increasing blood flow to the affected area, releasing white blood cells to fight off pathogens, and triggering the production of inflammatory mediators to remove damaged cells and initiate tissue repair.",
+    "What role do antioxidants play in maintaining health?":
+      "Antioxidants help neutralize free radicals, which are unstable molecules that can damage cells and contribute to aging and disease. Antioxidants protect cells from oxidative stress and reduce the risk of chronic diseases.",
+    "How does the body metabolize carbohydrates, fats, and proteins?":
+      "Carbohydrates are broken down into glucose, fats into fatty acids, and proteins into amino acids during digestion. These nutrients are then metabolized by cells for energy production, storage, and tissue repair.",
+    "What are the signs and symptoms of a stroke?":
+      "Signs and symptoms of a stroke include sudden weakness or numbness of the face, arm, or leg, confusion, trouble speaking or understanding speech, trouble seeing in one or both eyes, dizziness, and severe headache.",
+    "How does chronic stress affect the immune system?":
+      "Chronic stress can weaken the immune system by increasing levels of stress hormones such as cortisol, which suppress immune function and make individuals more susceptible to infections and illness.",
+    "What are the benefits of maintaining a healthy body weight?":
+      "Maintaining a healthy body weight reduces the risk of obesity-related conditions such as type 2 diabetes, heart disease, stroke, hypertension, certain cancers, and musculoskeletal disorders.",
+    "How does the body regulate hunger and satiety?":
+      "Hunger and satiety are regulated by hormones such as ghrelin, which stimulates appetite, and leptin, which signals fullness and suppresses appetite. These hormones interact with the brain to regulate food intake and energy balance.",
+    "What are the effects of chronic sleep deprivation?":
+      "Chronic sleep deprivation can lead to cognitive impairment, mood disturbances, increased risk of accidents and injuries, weakened immune function, weight gain, diabetes, hypertension, and heart disease.",
+    "How does the body adapt to regular exercise?":
+      "The body adapts to regular exercise by increasing cardiovascular fitness, building muscle strength and endurance, improving flexibility and coordination, and enhancing overall physical performance and health.",
+    "What are the benefits of maintaining good oral hygiene?":
+      "Maintaining good oral hygiene reduces the risk of dental caries, gum disease, and tooth loss, improves oral health and breath freshness, and may lower the risk of systemic conditions such as heart disease and diabetes.",
+    "How does the body respond to chronic pain?":
+      "The body responds to chronic pain by sensitizing pain receptors, altering pain perception, causing changes in mood and behavior, disrupting sleep patterns, and impairing overall quality of life.",
+    "What are the long-term effects of untreated mental health disorders?":
+      "Untreated mental health disorders can lead to chronic psychological distress, impaired social functioning, decreased productivity, increased risk of substance abuse, and higher mortality rates.",
+    "What are the benefits of regular meditation or mindfulness practice?":
+      "Regular meditation or mindfulness practice can reduce stress, promote relaxation, improve emotional well-being, enhance concentration and cognitive function, and cultivate a greater sense of self-awareness and compassion.",
+    "How does the body regulate blood coagulation and prevent excessive bleeding?":
+      "Blood coagulation is regulated by a complex system of clotting factors and platelets that form clots to stop bleeding. The body also produces anticoagulants to prevent excessive clot formation and maintain blood flow.",
+    "What are the risk factors for developing skin cancer?":
+      "Risk factors for skin cancer include excessive sun exposure, history of sunburns, fair skin, family history of skin cancer, presence of moles or unusual skin lesions, and exposure to ultraviolet radiation from tanning beds or lamps."
 };
 export default questionAnswerMap;
