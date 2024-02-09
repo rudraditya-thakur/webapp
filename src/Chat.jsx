@@ -1,18 +1,46 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Navbar } from './components';
+import questionAnswerMap from './components/qna';
+
+// Function to extract keywords from a sentence
+function extractKeywords(sentence) {
+  const tokens = sentence.toLowerCase().split(/\s+/);
+  const stemmedTokens = tokens.map(token => stemWord(token));
+  const uniqueTokens = [...new Set(stemmedTokens)]; // Remove duplicates
+  return uniqueTokens;
+}
+
+// Function to stem a word
+function stemWord(word) {
+  // This is a simple example, you can use more sophisticated stemming algorithms if needed
+  return word.replace(/ing$/, '').replace(/s$/, '');
+}
+
+// Function to find the best matching question based on keywords
+function findBestMatchingQuestion(keywords) {
+  let bestMatch = { question: '', score: 0 };
+
+  // Iterate over questions to find the best match
+  Object.keys(questionAnswerMap).forEach(question => {
+    const questionKeywords = extractKeywords(question);
+    const intersection = questionKeywords.filter(token => keywords.includes(token));
+    const score = intersection.length / Math.max(keywords.length, questionKeywords.length);
+
+    if (score > bestMatch.score) {
+      bestMatch = { question, score };
+    }
+  });
+
+  return bestMatch;
+}
 
 const Chat = () => {
-  const [messages, setMessages] = useState([
-    "How has the integration of artificial intelligence (AI) and machine learning impacted medical diagnostics and treatment modalities?",
-    "What ethical considerations should be taken into account when implementing genetic testing and personalized medicine?",
-    "How do socioeconomic factors influence access to healthcare and medical treatment, and what can be done to address healthcare disparities?"
-  ]);
+  const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
-  const [inputHeight, setInputHeight] = useState('auto'); // State to track the height of the textarea
+  const [inputHeight, setInputHeight] = useState('auto');
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    // Scroll to the bottom of the message list whenever messages change
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollTop = messagesEndRef.current.scrollHeight;
     }
@@ -20,9 +48,22 @@ const Chat = () => {
 
   const handleSendMessage = () => {
     if (newMessage.trim() !== '') {
-      setMessages([...messages, newMessage]);
+      const newQuery = { type: 'query', content: newMessage };
+      setMessages(prevMessages => [...prevMessages, newQuery]);
+
+      const keywords = extractKeywords(newMessage);
+      const { question, score } = findBestMatchingQuestion(keywords);
+
+      if (score > 0.2) { // Set your threshold as needed
+        const newResponse = { type: 'response', content: questionAnswerMap[question] };
+        setMessages(prevMessages => [...prevMessages, newResponse]);
+      } else {
+        const noResponse = { type: 'response', content: "I'm sorry, I don't understand." };
+        setMessages(prevMessages => [...prevMessages, noResponse]);
+      }
+
       setNewMessage('');
-      setInputHeight('35px'); // Reset input height to minimum height after sending message
+      setInputHeight('35px');
     }
   };
 
@@ -33,8 +74,8 @@ const Chat = () => {
   };
 
   const handleInputChange = (e) => {
-    const minAllowedHeight = 35; // Minimum height allowed for the textarea
-    const maxAllowedHeight = 70; // Maximum height allowed for the textarea
+    const minAllowedHeight = 35;
+    const maxAllowedHeight = 70;
     let newHeight = Math.max(minAllowedHeight, e.target.scrollHeight);
     newHeight = Math.min(maxAllowedHeight, newHeight);
 
@@ -46,28 +87,23 @@ const Chat = () => {
     <div className="w-screen mx-auto py-3 px-4 sm:px-6 lg:px-8 flex flex-col h-[92vh]  md:h-screen bg-gray-100 relative">
       <Navbar />
       <div className="flex-1 overflow-y-auto p-4" ref={messagesEndRef}>
-        {/* Display messages */}
         {messages.map((message, index) => (
-          <div key={index} className={`p-2 flex ${index < 3 ? 'mx-auto justify-center' : 'justify-end'}`}>
-            <div className={`bg-white p-2 rounded-lg ${index < 3 ? 'w-[80%]' : 'max-w-[60%]'}`}>
-              <p className={`text-gray-800 ${index < 3 ? 'text-center' : 'text-right'} justify-center`}>
-                {message}
-              </p>
+          <div key={index} className={`p-2 flex ${message.type === 'query' ? 'justify-end' : 'justify-start'}`}>
+            <div className={`bg-white p-2 rounded-lg ${message.type === 'query' ? 'text-right' : 'text-left'} w-[80%]`}>
+              <p className="text-gray-800">{message.content}</p>
             </div>
           </div>
         ))}
-        {/* Empty div to trigger scroll to bottom */}
         <div style={{ float:"left", clear: "both" }}></div>
       </div>
-      {/* Chat input area */}
       <div className="p-4 bg-white flex flex-row justify-center items-center w-full absolute bottom-0 left-0">
-        <textarea
+        <input
           value={newMessage}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
           placeholder="Message MedMind"
-          className="mx-auto w-[80%] md:w-4/5 lg:w-4/5 p-2 border border-gray-300 rounded resize-none" // Use resize-none to disable manual resizing
-          style={{ height: inputHeight }} // Set the height dynamically
+          className="mx-auto w-[80%] md:w-4/5 lg:w-4/5 p-2 border border-gray-300 rounded resize-none"
+          style={{ height: inputHeight }}
         />
         <button
           onClick={handleSendMessage}
