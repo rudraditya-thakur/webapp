@@ -1,5 +1,6 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
+import { Link } from 'react-router-dom';
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
@@ -28,7 +29,7 @@ const Business = () =>  (
       </p>
 
       <button class="mt-10 px-10 py-3 border text-[#569199] rounded-md transition-all duration-500 hover:bg-gradient-to-br hover:from-[#569199] hover:to-[#a4dad2] hover:text-white">
-        <a href="/chat" class="bg-transparent">Get Started</a>
+        <Link to="/chat" class="bg-transparent">Get Started</Link>
       </button>
     </div>
 

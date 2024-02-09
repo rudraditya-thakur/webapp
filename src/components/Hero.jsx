@@ -1,5 +1,6 @@
 import styles from "../style";
 import { doctor } from '../assets';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           </h1>
         </div>
         <button class="mt-10 px-10 py-3 border text-[#569199] rounded-md transition-all duration-500 hover:bg-gradient-to-br hover:from-[#569199] hover:to-[#a4dad2] hover:text-white">
-          <a href="/chat" class="bg-transparent">Get Started</a>
+          <Link to="/chat" class="bg-transparent">Get Started</Link>
         </button>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           At the forefront of AI healthcare, MedMind Innovision pioneers transformative diagnostics, leveraging advanced algorithms to detect rare diseases early, revolutionizing patient care.
