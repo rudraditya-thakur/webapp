@@ -66,6 +66,47 @@ const questionAnswerMap =
     "What are the symptoms of a urinary tract infection (UTI)": "Symptoms of a urinary tract infection may include frequent urination, urgency to urinate, burning or pain during urination, cloudy or foul-smelling urine, blood in the urine, pelvic pain or discomfort, and fever or chills, indicating inflammation or infection of the urinary tract.",
     "How does sleep impact cognitive function and memory": "Sleep plays a critical role in cognitive function and memory consolidation, facilitating neural processing, synaptic plasticity, and memory storage during various stages of sleep, including slow-wave sleep (deep sleep) and rapid eye movement (REM) sleep, supporting learning, problem-solving, and information retention.",
     "What are the risk factors for developing type 2 diabetes": "Risk factors for type 2 diabetes include obesity, sedentary lifestyle, unhealthy diet, family history of diabetes, ethnicity (higher risk in African American, Hispanic, Native American, and Asian American populations), age (risk increases with age), and gestational diabetes during pregnancy.",
-    "What is the importance of regular dental care in overall health": "Regular dental care promotes oral health by preventing tooth decay, gum disease, and oral infections, reducing the risk of systemic health problems such as heart disease, diabetes, and respiratory infections, and supporting overall well-being, confidence, and quality of life."
+    "What is the importance of regular dental care in overall health": "Regular dental care promotes oral health by preventing tooth decay, gum disease, and oral infections, reducing the risk of systemic health problems such as heart disease, diabetes, and respiratory infections, and supporting overall well-being, confidence, and quality of life.",
+    "What are the risk factors for developing lung cancer?":
+      "Risk factors for lung cancer include smoking tobacco, exposure to secondhand smoke, occupational exposure to carcinogens (such as asbestos and radon), air pollution, genetic predisposition, and a family history of lung cancer.",
+    "How does the body regulate blood sugar levels in individuals with diabetes?":
+      "In individuals with diabetes, blood sugar levels are regulated through medication (such as insulin or oral hypoglycemic agents), dietary management, physical activity, and monitoring blood glucose levels regularly to prevent hyperglycemia (high blood sugar) or hypoglycemia (low blood sugar) episodes.",
+    "What are the benefits of regular eye exams?":
+      "Regular eye exams help detect vision problems (such as refractive errors or cataracts), monitor eye health conditions (such as glaucoma or macular degeneration), identify signs of systemic diseases (such as diabetes or hypertension), and maintain optimal visual acuity and eye function.",
+    "How does the body respond to allergic reactions?":
+      "The body responds to allergic reactions by releasing histamine and other chemicals, triggering inflammation, swelling, itching, and other symptoms, activating the immune system to identify and neutralize allergens, and potentially causing allergic rhinitis, asthma, hives, or anaphylaxis in severe cases.",
+    "What are the benefits of breastfeeding for infants and mothers?":
+      "Breastfeeding provides essential nutrients, antibodies, and immune factors for infants, promotes bonding and emotional attachment between mothers and babies, reduces the risk of infections, allergies, and chronic diseases in infants, and supports postpartum recovery and maternal health for mothers.",
+    "How does the body regulate temperature during fever?":
+      "During fever, the body increases its core temperature in response to infection or inflammation, activating the immune system, releasing cytokines and prostaglandins, resetting the body's thermostat in the hypothalamus, and promoting heat production, shivering, and vasoconstriction to raise body temperature and combat pathogens.",
+    "What are the symptoms of an allergic reaction to food?":
+      "Symptoms of a food allergy may include hives, itching, swelling (of the lips, tongue, throat, or face), abdominal pain, diarrhea, nausea, vomiting, difficulty breathing, wheezing, coughing, nasal congestion, dizziness, lightheadedness, or anaphylaxis (a severe, life-threatening allergic reaction).",
+    "How does physical therapy benefit patients recovering from injuries or surgeries?":
+      "Physical therapy helps patients recover from injuries or surgeries by restoring mobility, strength, flexibility, and range of motion, reducing pain and inflammation, improving balance, coordination, and posture, preventing re-injury, and promoting functional independence and quality of life.",
+    "What are the risk factors for developing osteoporosis?":
+      "Risk factors for osteoporosis include age (especially postmenopausal women), gender (more common in females), family history of osteoporosis, low body weight, sedentary lifestyle, smoking, excessive alcohol consumption, poor nutrition (low calcium or vitamin D intake), and certain medications (such as corticosteroids or anticonvulsants).",
+    "How does stress affect gastrointestinal health?":
+      "Stress can affect gastrointestinal health by altering gut motility, increasing stomach acid production, exacerbating symptoms of acid reflux or irritable bowel syndrome (IBS), disrupting the gut microbiota, impairing digestion and nutrient absorption, and contributing to gastrointestinal disorders or functional gastrointestinal disorders.",
+    "What are the benefits of early detection and treatment of cancer?":
+      "Early detection and treatment of cancer increase the chances of successful outcomes, improve treatment options and prognosis, reduce the risk of cancer progression or metastasis, minimize the need for aggressive interventions, and enhance quality of life and survival rates for cancer patients.",
+    "How does the body metabolize medications?":
+      "Medications are metabolized in the liver through enzymatic processes such as oxidation, reduction, hydrolysis, and conjugation, converting drugs into metabolites that are more easily excreted by the kidneys or eliminated from the body, affecting drug efficacy, bioavailability, and toxicity.",
+    "What are the benefits of regular stretching exercises?":
+      "Regular stretching exercises improve flexibility, joint range of motion, and muscle elasticity, reduce muscle tension and stiffness, alleviate muscle soreness and discomfort, improve posture and alignment, enhance athletic performance, and prevent injuries during physical activities.",
+    "How does nutrition impact skin health?":
+      "Nutrition plays a key role in skin health by providing essential nutrients (such as vitamins, minerals, antioxidants, and fatty acids) that support collagen production, skin regeneration, and barrier function, promoting hydration, elasticity, and resilience, and preventing premature aging, dryness, or skin disorders.",
+    "What are the benefits of mindfulness-based stress reduction techniques?":
+      "Mindfulness-based stress reduction techniques help individuals manage stress, anxiety, and depression, cultivate awareness, attention, and emotional regulation, promote relaxation and mindfulness practices (such as meditation, deep breathing, and body scanning), enhance resilience, and improve overall well-being and mental health.",
+    "How does chronic pain affect quality of life?":
+      "Chronic pain can significantly impact quality of life by causing physical discomfort, fatigue, sleep disturbances, reduced mobility and functional limitations, emotional distress (such as anxiety, depression, or irritability), social isolation, impaired work productivity, and decreased overall satisfaction and enjoyment of life.",
+    "What are the benefits of regular cardiovascular exercise?":
+      "Regular cardiovascular exercise strengthens the heart muscle, improves circulation and blood flow, lowers blood pressure and cholesterol levels, enhances aerobic capacity and endurance, promotes weight management, reduces the risk of cardiovascular disease, stroke, and diabetes, and supports overall cardiovascular health and longevity.",
+    "How does the body respond to chronic stress?":
+      "Chronic stress triggers the body's stress response, leading to sustained release of stress hormones (such as cortisol and adrenaline), dysregulation of the hypothalamic-pituitary-adrenal (HPA) axis, immune suppression, inflammation, oxidative stress, and disruptions in sleep, appetite, mood, and cognitive function, contributing to physical and mental health problems.",
+    "What are the risk factors for developing rheumatoid arthritis?":
+      "Risk factors for rheumatoid arthritis include genetic predisposition, family history of the disease, environmental factors (such as smoking or exposure to certain viruses or bacteria), hormonal changes, obesity, and systemic inflammation, triggering autoimmune reactions and joint inflammation.",
+    "How does the body regulate blood clotting?":
+      "Blood clotting (or coagulation) is regulated by a complex cascade of biochemical reactions involving platelets, clotting factors, and blood vessel walls, forming fibrin clots to stop bleeding, maintain hemostasis, and repair damaged blood vessels while preventing excessive clot formation (thrombosis) or bleeding disorders."
+
 };
 export default questionAnswerMap;
